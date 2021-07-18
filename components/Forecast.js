@@ -6,25 +6,12 @@ export default function Forecast(props) {
     <View >
         <Text style={styles.BText}>{props.main}</Text>
         <Text>{props.description}</Text>
-            <Text style={styles.BText}>{props.temp}°C</Text>
+            <Text>{props.temp}°C</Text>
         </View>
     );
    }
-   
    const styles = StyleSheet.create({    //กำหนด backdrop style 
-    backdrop: {
-        flexDirection: 'column',
-        width: '100%',
-        height:'100%'
-    },
     BText: {
-        fontSize: 20
+        fontSize: 20 //กำหนดขนาดตัวอักษร
     },
-    BBlack:{
-        justifyContent: 'center', //center แนวแกนตั้ง
-        alignItems: 'center', //center แนวแกนนอน
-        backgroundColor: 'rgba(0,0,0,0.3)',
-        height:'50%',
-        width:'100%'
-    }
 })
