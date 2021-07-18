@@ -6,12 +6,15 @@ export default function Forecast(props) {
     <View >
         <Text style={styles.BText}>{props.main}</Text>
         <Text>{props.description}</Text>
-            <Text>{props.temp}°C</Text>
+            <Text style={styles.AText}>{props.temp}°C</Text>
         </View>
     );
    }
    const styles = StyleSheet.create({    //กำหนด backdrop style 
     BText: {
         fontSize: 20 //กำหนดขนาดตัวอักษร
+    },
+    AText:{
+        fontSize: 30
     },
 })
